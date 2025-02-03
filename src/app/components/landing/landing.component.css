@@ -63,6 +63,44 @@ iframe{
 #features svg{
     filter: invert(1) !important;
 }
+.navbar {
+    min-height: 140px;
+    padding: 10px 0;
+}
+
+.navbar-brand-container {
+    position: relative;
+    min-height: 120px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    display: block;
+    height: 120px;
+    width: auto;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        min-height: 120px;
+    }
+    
+    .navbar-brand {
+        position: static;
+        transform: none;
+    }
+    
+    .navbar-brand img {
+        height: 100px;
+    }
+}
 @media (max-width: 900px){
     .hero{
         margin-top: 130px !important;
